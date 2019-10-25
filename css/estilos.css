@@ -17,6 +17,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
     /* font-style: italic; */
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -31,6 +32,7 @@ h1 {
     /* text-transform: uppercase; */
     /* text-decoration: dashed; */
     margin: 100px 150px 70px 30px;
+    margin: 0;
 }
 
 h1 strong{
@@ -46,6 +48,14 @@ h1 strong{
     background-position-x: right;
 }
 
+.menu ol{
+    margin: 0;
+}
+
+.portfolio{
+    background: #fafafa;
+}
+
 .project{
     /* border-top: 10px solid red;
     border-right: 10px solid green;
@@ -58,6 +68,10 @@ h1 strong{
     border: 1px solid gray;
     border-radius: 10px;
     /* border-top-left-radius: 50px; */
+    margin-bottom: 15px;
+    margin:10px;
+    padding: 20px;
+    background: white;
 }
 
 .project-details{
