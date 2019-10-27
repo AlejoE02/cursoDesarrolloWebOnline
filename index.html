@@ -10,24 +10,15 @@
 </head>
 
 <body>
-  <div class="flexbox">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
   <header class="header">
-    <div>
+    <div class="container">
       <figure class="logo">
-        <img src="images/logo.png" alt="no carga">
+        <img height="50" src="images/logo.png" alt="no carga">
       </figure>
       <nav class="menu">
         <ol>
           <li>
-            <a class="link" href="./portafolio/index.html">Portafolio</a>
+            <a class="link" href="#portafolio">Portafolio</a>
           </li>
           <li>
             <a class="link" href="#eventos">Experiencia</a>
@@ -38,38 +29,23 @@
         </ol>
       </nav>
     </div>
+    
   </header>
   <!-- Seccion principal -->
   <section class="hero">
-    <h1>
-      ¡¡Hola!! <br> Soy <strong> Alejandro Espitia </strong> <br> <strong>Desarrollador </strong> web Junior!!
-    </h1>
-    <!-- <img src="images/hero.jpg" width="500" height="300" alt="Imagen principal del sitio"> -->
+    <div class="container">
+      <h1>
+        ¡¡Hola!! <br> Soy <strong> Alejandro Espitia </strong> <br> <strong>Desarrollador </strong> web Junior!!
+      </h1>
+      <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="Imagen principal del sitio">
+    </div>
   </section>
   <!-- Seccion de portafolio -->
   <section id="portafolio" class="portfolio">
-    <h2>Portafolio (Proyectos Destacados)</h2>
-    <!-- primer proyecto -->
-    <article class="project">
-      <div class="project-details">
-        <h3 class="project-title">Platzi Video</h3>
-        <h6 class="project-course">React Native / React</h6>
-        <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-        <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-        <p class="project-description">Platzi video fue el restulado de tres meses de trabajo
-          para crear la mejor app para enseñar el funcionamiento
-          de React y React Native. Desde crear una vista-detalle hasta patrones avanzados de navegación,
-          este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma.
-        </p>
-      </div>
-
-      <figure class="project-imageContainer">
-        <img class="project-image" src="images/platzi-video-react-native.png" width="500"
-          alt="proyecto del curso de react native">
-      </figure>
-    </article>
-    <!-- segundo proyecto -->
-    <article class="project">
+    <div class="container">
+      <h2>Portafolio (Proyectos Destacados)</h2>
+      <!-- primer proyecto -->
+      <article class="project">
         <div class="project-details">
           <h3 class="project-title">Platzi Video</h3>
           <h6 class="project-course">React Native / React</h6>
@@ -87,28 +63,106 @@
             alt="proyecto del curso de react native">
         </figure>
       </article>
+      <!-- segundo proyecto -->
+      <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Platzi Video</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+            <p class="project-description">Platzi video fue el restulado de tres meses de trabajo
+              para crear la mejor app para enseñar el funcionamiento
+              de React y React Native. Desde crear una vista-detalle hasta patrones avanzados de navegación,
+              este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma.
+            </p>
+          </div>
+    
+          <figure class="project-imageContainer">
+            <img class="project-image" src="images/platzi-video-react-native.png" width="500"
+              alt="proyecto del curso de react native">
+          </figure>
+        </article>
+    </div>
   </section>
   <!-- Seccion de experiencia/eventos -->
-  <section id="eventos">
-    <h2>Más sobre mi Experiencia</h2>
+  <div class="container">
+    <h2 class="event-list-title">Más sobre mi Experiencia</h2>
+  </div>
+  <section id="eventos" class="event-list">
+    <div class="container">
+      <article class="event">
+      <figure class="event-imageContainer">
+        <img class="event-image" src="images/platzi-conf.jpg" width="500" alt="imagen de la platzi conf">
+      </figure>
+      <div class="event-detail">
+        <h3 class="event-title">PlatziConf Colombia 2019</h3>
+        <p class="event-description">Conferencia de Platzi en Colombia 2019</p>
+        <a class="event-url" href="https://platzi.com/clases/" target="_blank">Ver conferencia</a>
+      </div>
+    </article>
+    <!-- segundo evento -->
+    <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="images/platzi-conf.jpg" width="500" alt="imagen de la platzi conf">
+        </figure>
+        <div class="event-detail">
+          <h3 class="event-title">PlatziConf Colombia 2019</h3>
+          <p class="event-description">Conferencia de Platzi en Colombia 2019</p>
+          <a class="event-url" href="https://platzi.com/clases/" target="_blank">Ver conferencia</a>
+        </div>
+      </article>
+      <!-- tercer evento -->
+      <article class="event">
+      <figure class="event-imageContainer">
+        <img class="event-image" src="images/platzi-conf.jpg" width="500" alt="imagen de la platzi conf">
+      </figure>
+      <div class="event-detail">
+        <h3 class="event-title">PlatziConf Colombia 2019</h3>
+        <p class="event-description">Conferencia de Platzi en Colombia 2019</p>
+        <a class="event-url" href="https://platzi.com/clases/" target="_blank">Ver conferencia</a>
+      </div>
+    </article>
+    <!-- cuarto evento -->
     <article class="event">
       <figure class="event-imageContainer">
         <img class="event-image" src="images/platzi-conf.jpg" width="500" alt="imagen de la platzi conf">
       </figure>
-      <h3 class="event-title">PlatziConf Colombia 2019</h3>
-      <p class="event-description">Conferencia de Platzi en Colombia 2019</p>
-      <a class="event-url" href="https://platzi.com/clases/" target="_blank">Ver conferencia</a>
+      <div class="event-detail">
+        <h3 class="event-title">PlatziConf Colombia 2019</h3>
+        <p class="event-description">Conferencia de Platzi en Colombia 2019</p>
+        <a class="event-url" href="https://platzi.com/clases/" target="_blank">Ver conferencia</a>
+      </div>
     </article>
+    </div>
   </section>
   <!-- Seccion de contacto -->
   <section id="contacto" class="contact">
-    <form action="/suscripcion/" class="form-email">
-      <h3>¿Creamos algo juntos?</h3>
-      <input type="email" id="email" placeholder="Déjame tu email">
-      <button>Enviar</button>
-    </form>
+    <div class="container">
+      <form action="/suscripcion/" class="form-email">
+        <h3>¿Creamos algo juntos?</h3>
+        <input type="email" id="email" placeholder="Déjame tu email">
+        <button>Enviar</button>
+      </form>
+      <div class="social">
+        <a href="https://twitter.com/alejoespitia02" class="social-link twitter"></a>
+        <a href="https://facebook.com/alejoespitia02" class="social-link facebook"></a>
+        <a href="https://github.com/alejoe02" class="social-link github"></a>
+        <a href="https://instagram.com/alejoespitia02" class="social-link instagram"></a>
+      </div>
+    </div>
   </section>
-  <footer class="footer">footer</footer>
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <p>Curso de desarrollo web de platzi 2019 <img width="80" src="images/platzi.png" alt=""></p>
+      </div>
+      <div>
+        <p>
+          Designed with <\3 by <a href="https://twitter.com/alejoespitia02">@alejoespitia02</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
